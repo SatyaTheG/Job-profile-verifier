@@ -1,14 +1,6 @@
-import pickle
-from extract import extract_text_from_pdf
-from sklearn.feature_extraction.text import TfidfVectorizer
-# load the vectorizer
-loaded_vectorizer = pickle.load(open('vectorizer.pickle', 'rb'))
-# load the model from disk
-filename = 'finalized_model.sav'
-loaded_model = pickle.load(open(filename, 'rb'))
-loaded_vectorizer = pickle.load(open('vectorizer.pickle', 'rb'))
-filename = 'finalized_model.sav'
-loaded_model = pickle.load(open(filename, 'rb'))
+from model import model,vectorizer
+import streamlit as st
+
 
 # Define the app
 def app():
@@ -20,8 +12,8 @@ def app():
         # Read the resume file
         resume_data = resume_file.read()
 
-        X = loaded_vectorizer.transform([resume_data])
-        result = loaded_model.predict(X)
+        X = vectorizer.transform([resume_data])
+        result = model.predict(X)
 
         # Display the job profile
         st.write("The job profile for your resume is:", result)
