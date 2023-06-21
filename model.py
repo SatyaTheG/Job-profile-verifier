@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
 # Load the dataset
-df = pd.read_csv(r'C:\Users\Satyanarayan Sahoo\Desktop\satya\Job_Role\UpdatedResumeDataSet.csv')
+df = pd.read_csv('./UpdatedResumeDataSet.csv')
 
 # Preprocess the text data
 vectorizer = TfidfVectorizer()
