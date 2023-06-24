@@ -17,7 +17,13 @@ git clone https://github.com/SatyaTheG/Resume_Parser.git
 
 => Just locate your Command Prompt or Powershell to Project Folder
 
-=> Run the following command to upload the required resume to determine the suitable job role
+=> Run the following command to get your local model
+
+```bash
+  python model.py
+```
+
+=> Then run the following command to upload the required resume to determine the suitable job role
 
 ```bash
   python main.py
