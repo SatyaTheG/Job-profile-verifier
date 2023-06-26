@@ -23,8 +23,14 @@ git clone https://github.com/SatyaTheG/Job-profile-verifier.git
   python model.py
 ```
 
-=> Then run the following command to upload the required resume to determine the suitable job role
+=> Then run the following command to upload the required resume to determine the suitable job role using local GUI
 
 ```bash
   python main.py
+```
+
+=> Then run the following command to upload the required resume to determine the suitable job role using localhost web app
+
+```bash
+  streamlit run app.py
 ```
