@@ -4,7 +4,7 @@ The project aims to develop a machine learning-based solution for automated resu
 ## Clone Repo And use it
 * Clone resume_miner repo using below command
 ```git
-git clone https://github.com/SatyaTheG/Resume_Parser.git
+git clone https://github.com/SatyaTheG/Job-profile-verifier.git
 ```
 
 ## Installation Steps
